@@ -36,7 +36,7 @@ const HomePage = () => {
                     onChange={e => setSearch(e.target.value)}
                 />
 
-                {dropdown && <ul className='list-none absolute top-[42px] left-0 right-0 max-h-[300px] overflow-y-scroll shadow-md bg-white'>
+                {dropdown && <ul className='list-none absolute top-[42px] left-0 right-0 max-h-[300px] overflow-y-scroll scrollbar scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100 shadow-md bg-white'>
                     {isLoading && <p className='text-center text-blue-600'>Loading...</p>}
                     {data?.map(user => (
                         <li
